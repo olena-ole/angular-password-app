@@ -9,9 +9,9 @@ export class InputComponent implements OnInit {
 
   class: string = 'password-indicator';
 
-  strongPassword: RegExp = new RegExp('(?=.*[A-Za-z])(?=.*[0-9])(?=.*[^A-Za-z0-9])');
-  mediumPassword: RegExp = new RegExp('(?=.*[A-Za-z])(?=.*[^A-Za-z0-9])|(?=.*[A-Za-z])(?=.*[0-9])|(?=.*[0-9])(?=.*[^A-Za-z0-9])');
-  easyPassword: RegExp = new RegExp('(?=.*[A-Za-z])|(?=.*[0-9])|(?=.*[^A-Za-z0-9])');
+  strongPassword: RegExp = /(?=.*[A-Za-z])(?=.*[0-9])(?=.*[^A-Za-z0-9])/;
+  mediumPassword: RegExp = /(?=.*[A-Za-z])(?=.*[^A-Za-z0-9])|(?=.*[A-Za-z])(?=.*[0-9])|(?=.*[0-9])(?=.*[^A-Za-z0-9])/;
+  easyPassword: RegExp = /(?=.*[A-Za-z])|(?=.*[0-9])|(?=.*[^A-Za-z0-9])/;
 
   checkPassword(event : Event) : void {
     const enteredPassword: string = (event.target as HTMLInputElement).value;
