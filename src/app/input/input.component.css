@@ -1,0 +1,52 @@
+.password-container {
+    padding: 20px 0;
+}
+
+.password-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 5px 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.password-indicator {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.password-indicator > div {
+    border: 1px solid black;
+    width: 100%;
+    background-color: rgb(121, 124, 126);
+}
+
+.password-indicator.weak > div {
+    background-color: rgb(233, 63, 63);
+}
+
+.password-indicator.easy,
+.password-indicator.medium {
+    background-color: rgb(121, 124, 126);
+}
+
+.password-indicator.easy > div:first-child {
+    background-color: rgb(233, 63, 63);
+}
+
+.password-indicator.medium > div:first-child,
+.password-indicator.medium > div:nth-child(2) {
+    background-color: rgb(249, 233, 84);
+}
+
+.password-indicator.strong > div {
+    background-color: rgb(80, 141, 80);
+}
+

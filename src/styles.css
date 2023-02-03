@@ -10,3 +10,7 @@ body {
     background-color: rgb(244, 234, 203);
     color: rgb(29, 45, 59)
 }
+
+h1 {
+    text-align: center;
+}
